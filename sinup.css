@@ -1,0 +1,92 @@
+/* PAGE BACKGROUND */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    /* Soft gradient background */
+    background: linear-gradient(135deg, #FDE68A, #FCA5A5, #A5B4FC);
+    background-size: cover;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FORM CARD */
+.form-container {
+    width: 350px; /* small nice width */
+    background: white;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    animation: fadeIn 0.7s ease;
+    text-align: center;
+}
+
+/* TITLE */
+.form-container h2 {
+    margin-bottom: 15px;
+    color: #1f2937;
+    font-size: 24px;
+}
+
+/* INPUTS */
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+form input:focus, form select:focus {
+    border-color: #6366F1;
+    box-shadow: 0 0 6px rgba(99,102,241,0.4);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 18px;
+    background: #6366F1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #4F46E5;
+    transform: translateY(-2px);
+}
+
+/* LINKS */
+p a {
+    text-decoration: none;
+    color: #2563EB;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 400px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
